@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/4.9.95/css/materialdesignicons.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js" integrity="sha256-Zr3vByTlMGQhvMfgkQ5BtWRSKBGa2QlspKYJnkjZTmo=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css" integrity="sha256-mLBIhmBvigTFWPSCtvdu6a76T+3Xyt+K571hupeFLg4=" crossorigin="anonymous" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://kit.fontawesome.com/483dc9acdd.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+        <script defer src="index.js"></script>
+        <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css'>
+    </head>
+    <body>
+<header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg py-10 navbar-dark bg-dark" style="position: fixed; top: 0; width: 100%; z-index: 9999;">
+      <div class="container">
+          <a class="navbar-brand" href="#home">
+              Kausic</a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNavbar4" aria-controls="myNavbar4" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+
+
+          <div class="lc-block collapse navbar-collapse" id="myNavbar4">
+              <div lc-helper="shortcode" class="live-shortcode me-auto"> <!--  lc_nav_menu -->
+                  <ul id="menu-menu-1" class="navbar-nav me-auto mb-2 mb-md-0 navbar-nav">
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom nav-item nav-item-32739"><a href="#home" class="nav-link ">Home</a></li>
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom nav-item nav-item-32739"><a href="#about" class="nav-link ">About</a></li>
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home nav-item nav-item-32738"><a href="#education" class="nav-link ">Skills</a></li>
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home nav-item nav-item-32738"><a href="#projects" class="nav-link ">Projects</a></li>
+                  </ul> <!-- /lc_nav_menu -->
+              </div>
+          </div>
+      </div>
+  </nav>
+    <!-- Navbar -->
+    <div class="container col-xxl-8 px-4 py-5" id="home">
+      
+      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-6">
+              <img src="images/Kausic.JPG" class="d-block mx-lg-auto img-fluid" alt="" loading="lazy">   
+          </div>
+
+          <div class="col-lg-6">
+              <div class="lc-block mb-3">
+                  <div editable="rich">
+                      <h2 class="fw-bold display-5">Hello, I am Kausic</h2>
+                  </div>
+              </div>
+
+              <div class="lc-block mb-3">
+                  <div editable="rich">
+                      <p class="lead">Software Developer, Actively Seeking Full Time/Co-op Opportunities
+                      </p>
+                  </div>
+              </div>
+
+              <div class="lc-block d-grid gap-2 d-md-flex justify-content-md-start">
+                <a class="btn btn-primary px-4 me-md-2" href="images/Kausic_Resume.pdf"role="button">
+                  <i class="bi bi-download"></i> Download Resume
+                </a>
+              </div>
+              <div>
+                <br>
+                <a href="https://github.com/kausicmn" target="_blank" style="text-decoration: none;margin-right: 10px;">
+                  <i class="devicon-github-original colored"></i> 
+                </a>
+                <a href="https://www.linkedin.com/in/kausicmn/" target="_blank" style="text-decoration:none;margin-right: 10px;">
+                  <i class="devicon-linkedin-plain colored"></i>
+                </a>
+                <a href="mailto:kausicmn@gmail.com" style="text-decoration: none;">
+                  <i class="bi bi-envelope"></i> 
+                </a>
+              </div>
+              
+          </div>
+      </div>
+  </div>
+    <!-- Background image -->
+  </header>
+  <section class="section"id="about"> 
+    <div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <h3 class="text-center">About Me</h3>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="job-detail mt-2 p-4">
+                <div class="job-detail-desc">
+                    <p class="text-muted f-14 mb-3">I am an aspiring Software Engineer with a strong academic background in Cloud Computing, Machine Learning, and Web Development. My passion lies in leveraging technology to create innovative and impactful solutions. I possess a comprehensive skill set in web development, utilizing modern frameworks to build dynamic and user-centric applications. Additionally, I am proficient in implementing machine learning algorithms to extract valuable insights from data. With experience in deploying applications on cloud platforms, I am well-versed in creating scalable and resilient software solutions. I am committed to continuous learning and staying updated with the latest advancements in the field. I am excited to contribute my expertise to the ever-evolving world of software engineering, and I am driven to make a positive difference through my work.</p>
+                </div>
+                <hr>
+                <ul class="list-inline mt-3 mb-0">
+                    <li class="list-inline-item mr-3">
+                        <a href="" class="text-muted f-15 mb-0" style="text-decoration: none;"><i class="mdi mdi-map-marker mr-2"></i>1200 Nord Avenue, Chico, CA 95926</a>
+                    </li>
+                    <li class="list-inline-item mr-3">
+                        <a href="" class="text-muted f-15 mb-0" style="text-decoration: none;"><i class="mdi mdi-email mr-2"></i>kausicmn@gmail.com</a>
+                    </li>
+
+                    <li class="list-inline-item mr-3">
+                        <a href="" class="text-muted f-15 mb-0" style="text-decoration: none;"><i class="mdi mdi-cellphone-iphone mr-2"></i>(650) 880 0373</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+  
+   <div class="row" id="education">
+        <div class="col-lg-12">
+            <h3 class="text-center mt-4 mb-2">Education</h3>
+        </div>
+    </div>
+
+    <div class="row justify-content-center">
+        <div class="col-lg-6">
+            <div class="job-detail candidates-profile-education text-center text-muted mb-5 mt-5">
+                <div class="profile-education-icon">
+                    <i class="mdi mdi-school"></i>
+                </div>
+                <h6 class="text-uppercase f-17"><a href="#" class="text-muted" style="text-decoration: none;"><strong>California State University, Chico</strong></a></h6>
+                <p class="f-14 mb-1">August 2021 - Dec 2023</p>
+                <p class="f-14 mb-0">Master of Science in Computer Science</p>
+            </div>
+        </div>
+
+        <div class="col-lg-6">
+            <div class="job-detail candidates-profile-education text-center text-muted mb-5 mt-5">
+                <div class="profile-education-icon">
+                    <i class="mdi mdi-school"></i>
+                </div>
+                <h6 class="text-uppercase f-17"><a href="#" class="text-muted"style="text-decoration: none;" ><strong>Anna University</strong></a></h6>
+                <p class="f-14 mb-1">Aug 2017 - May 2021</p>
+                <p class="f-14 mb-0">Bachelor of Technology in Information Technology</p>
+            </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12">
+              <h3 class="text-center">Technical Skills</h3>
+              <br>
+          </div>
+      </div>
+    
+      <div class="row">
+        <div class="col-lg-3 column-divider">
+          <h5 class="text-dark font-bold mb-3">Languages</h4>
+          <ul class="list-unstyled">
+            <li><i class="devicon-cplusplus-plain colored"></i> C++</li>
+            <li><i class="devicon-python-plain colored"></i> Python</li>
+            <li><i class="devicon-javascript-plain colored"></i> JavaScript</li>
+            <li><i class="devicon-mysql-plain colored"></i> SQL</li>
+            <li><i class="devicon-html5-plain colored"></i> HTML</li>
+            <li><i class="devicon-css3-plain colored"></i> CSS</li>
+            <li><i class="devicon-dart-plain colored"></i> Dart</li>
+            <li><i class="devicon-typescript-plain colored"></i> TypeScript</li>
+          </ul>
+        </div>
+        <div class="col-lg-3 column-divider">
+          <h5 class="text-dark font-weight-bold mb-3">Database & Cloud</h4>
+          <ul class="list-unstyled">
+            <li><i class="devicon-mysql-plain colored"></i> MySQL</li>
+            <li><i class="devicon-mongodb-plain colored"></i> MongoDB</li>
+            <li><i class="devicon-amazonwebservices-plain colored"></i> AWS</li>
+            <li><i class="devicon-googlecloud-plain colored"></i> GCP</li>
+            <li><i class="devicon-firebase-plain colored"></i> Firebase</li>
+            <li><i class="devicon-terraform-plain colored"></i> Terraform</li>
+            <li><i class="devicon-circleci-plain colored"></i> CI/CD</li>
+          </ul>
+        </div>
+        <div class="col-lg-3 column-divider">
+          <h5 class="text-dark font-weight-bold  mb-3">Frameworks</h4>
+          <ul class="list-unstyled">
+            <li><i class="devicon-angularjs-plain colored"></i> Angular</li>
+            <li><i class="devicon-docker-plain colored"></i> Docker</li>
+            <li><i class="devicon-express-original colored"></i> Express.js</li>
+            <li><i class="devicon-react-original colored"></i> React</li>
+            <li><i class="devicon-nodejs-plain colored"></i> Node.js</li>
+            <li><i class="devicon-django-plain colored"></i> Django</li>
+            <li><i class="devicon-bootstrap-plain colored"></i> Bootstrap</li>
+            <li><i class="devicon-google-plain colored"></i> Scikit-learn</li>
+            <li><i class="devicon-flutter-plain colored"></i> Flutter</li>
+          </ul>
+        </div>
+        <div class="col-lg-2">
+          <h5 class="text-dark font-weight-bold mb-3">Tools</h4>
+          <ul class="list-unstyled">
+            <li><i class="devicon-java-plain colored"></i> Eclipse</li>
+            <li><i class="devicon-intellij-plain colored"></i> IntelliJ</li>
+            <li><i class="devicon-visualstudio-plain colored"></i> VS Code</li>
+            <li><i class="devicon-github-plain colored"></i> GitHub</li>
+            <li><i class="devicon-jira-plain colored"></i> Jira</li>
+            <li><i class="devicon-google-plain colored"></i> Google Colab</li>
+            <li><i class="devicon-jupyter-plain colored"></i> Jupyter Notebook</li>
+          </ul>
+        </div>
+      </div>
+    <div class="row" id="projects">
+        <div class="col-lg-12">
+          <br>
+            <h3 class="text-center mb-4">Projects</h3>
+        </div>
+    </div>
+    <div class="row">
+      
+      <div class="col-md-6">
+        <div class="job-detail job-list-box mt-4 p-4">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="job-list-desc candidates-profile-exp-desc">
+                  <h5 class="f-19 mb-2"><a href="#" class="text-dark" style="text-decoration:none" >Cloud Resume Challenge</a></h5>
+                  <ul>
+                    <li class="text-muted mb-0 f-16">Developed a cloud-based resume website using AWS services, showcasing HTML, CSS, and JavaScript skills</li>
+                    <li class="text-muted mb-0 f-16">Deployed the website as a static site on Amazon S3, secured with HTTPS using Amazon CloudFront</li>
+                    <li class="text-muted mb-0 f-16">Implemented a visitor counter using DynamoDB, API Gateway, and Lambda with Python and AWS SDK (boto3)</li>
+                    <li class="text-muted mb-0 f-16">Automated Terraform configuration with CI/CD using GitHub Actions for seamless infrastructure deployment</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+        <div class="col-md-6">
+            <div class="job-detail job-list-box mt-4 p-4">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="job-list-desc candidates-profile-exp-desc">
+                      <h5 class="f-19 mb-2"><a href="#" class="text-dark" style="text-decoration:none" >Video Game Discovery App</a></h5>
+                      <ul>
+                        <li class="text-muted mb-0 f-16">Developed a video game discovery app using React and RAWG API, with advanced filtering and dark mode option</li>
+                        <li class="text-muted mb-0 f-16">Built a clean and responsive user interface with Chakra UI for easy navigation and improved user experience</li>
+                        <li class="text-muted mb-0 f-16">Deployed the app on AWS for high availability, scalability, and reliability</li>
+                        <li class="text-muted mb-0 f-16">Implemented CI/CD using AWS CodePipeline for automated build, test, and deployment</li>
+                      </ul>
+                      <br>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+
+      <div class="col-md-6">
+        <div class="job-detail job-list-box mt-4 p-4">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="job-list-desc candidates-profile-exp-desc">
+                        <h5 class="f-19 mb-2"><a href="https://github.com/kausicmn/Inventory-mangement-MEAN" class="text-dark">Inventory Management System</a></h5>
+                        <ul>
+                          <li class="text-muted mb-0 f-16">Designed a robust and scalable inventory management system using MEAN stack</li>
+                          <li class="text-muted mb-0 f-16">Demonstrated expertise in cloud computing and infrastructure management by deploying the system in AWS</li>
+                          <li class="text-muted mb-0 f-16">Conducted thorough testing and debugging to ensure full functionality and compliance with requirements</li>
+                          <li class="text-muted mb-0 f-16">Utilized Terraform for infrastructure as code, enabling consistent and reproducible deployments</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="col-md-6">
+            <div class="job-detail job-list-box mt-4 p-4">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="job-list-desc candidates-profile-exp-desc">
+                            <h5 class="f-19 mb-2"><a href="https://github.com/kausicmn/Organizer-Django" class="text-dark">Organizer</a></h5>
+                            <ul>
+                              <li class="text-muted mb-0 f-16">Designed a full stack Organizer web service using HTML, CSS, JavaScript, Bootstrap, Django & Python</li>
+                              <li class="text-muted mb-0 f-16">Developed a web-based task manager and expense tracker to efficiently manage tasks and expenses</li>
+                              <li class="text-muted mb-0 f-16">Utilized Docker to containerize the application for easy deployment and portability</li>
+                              <li class="text-muted mb-0 f-16">Demonstrated cloud expertise by deploying web app on Google Cloud Platform</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+
+      <div class="col-md-6">
+        <div class="job-detail job-list-box mt-4 p-4">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="job-list-desc candidates-profile-exp-desc">
+                        <h5 class="f-19 mb-2"><a href="https://github.com/kausicmn/Wildfire-Prediction" class="text-dark">Wildfire Prediction using Artificial Neural Network</a></h5>
+                        <ul>
+                          <li class="text-muted mb-0 f-16">Pre-processed weather and fire data with Geopandas to extract geospatial features</li>
+                          <li class="text-muted mb-0 f-16">Explored Scikit-Learn models and identified MLP as best for predicting wildfires</li>
+                          <li class="text-muted mb-0 f-16">Analyzed and visualized data with Matplotlib and Seaborn to guide model development</li>
+                          <li class="text-muted mb-0 f-16">Developed an accurate wildfire prediction model using MLP achieving 90% accuracy</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+      <div class="col-md-6">
+          <div class="job-detail job-list-box mt-4 p-4">
+              <div class="row">
+                  <div class="col-lg-12">
+                      <div class="job-list-desc candidates-profile-exp-desc">
+                          <h5 class="f-19 mb-2"><a href="https://github.com/kausicmn/Mausam" class="text-dark">Weather App using Flutter</a></h5>
+                          <ul>
+                            <li class="text-muted mb-0 f-16">Designed and developed a weather app using Flutter for Android devices</li>
+                            <li class="text-muted mb-0 f-16">Implemented search functionality to enable users to look up the weather for different locations</li>
+                            <li class="text-muted mb-0 f-16">Integrated Google Maps API and Firebase to display and store location-based information</li>
+                            <li class="text-muted mb-0 f-16">Utilized REST APIs to fetch and display data from external sources</li>
+                            <br>
+                            <br>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<div class="row justify-content-center"> 
+<div class="col-md-6">
+  <div class="job-detail job-list-box mt-4 p-4">
+      <div class="row">
+          <div class="col-lg-12">
+              <div class="job-list-desc candidates-profile-exp-desc">
+                  <h5 class="f-19 mb-2"><a href="https://github.com/kausicmn/A-Voice-and-Vision-based-Smart-Wheelchair-for-Paralyzed-People-" class="text-dark">Voice and Vision based Smart Wheelchair</a></h5>
+                  <ul>
+                    <li class="text-muted mb-0 f-16">Developed a Voice and Vision-based Smart Wheelchair by integrating image processing using OpenCV</li>
+                    <li class="text-muted mb-0 f-16">Built an android application for speech synthesis and recognition using Flutter</li>
+                    <li class="text-muted mb-0 f-16">Designed eyeball movement tracker algorithm using Python</li>
+                    <li class="text-muted mb-0 f-16">Assembled smart wheelchair setup by using Raspberry Pi</li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+</div>
+<div class="container py-md-6 py-4">
+  <div class="row justify-content-center mb-4">
+    <div class="col-xl-10">
+      <div class="lc-block  mb-4">
+        <div>
+          <h3 class="text-center mb-4">Certifications & Achievments</h3>
+        </div>
+      </div>
+
+    </div>
+    <!-- /col -->
+  </div>
+  <div class="row justify-content-center">
+    <div class="col-sm-9 col-md-6 mb-4 col-lg-4">
+      <div class="lc-block card shadow">
+        <div class="card-body p-4">
+          <div class="lc-block mb-3">
+            <img src="images/SAA.png"alt="AWS Certified Solution Architect Associate Badge" class="badge-image">
+          </div><!-- /lc-block -->
+          <div class="lc-block mb-4">
+            <div>
+              <h5 class="f-19 mb-2"><a href="https://www.credly.com/badges/49e39ce9-33e6-4fc7-8e81-9c2317f19754" class="text-dark">AWS Certified Solution Architect Associate</a></h5>
+            </div>
+          </div><!-- /lc-block -->
+        </div>
+      </div>
+    </div><!-- /col -->
+    <div class="col-sm-9 col-md-6 mb-4 col-lg-4">
+      <div class="lc-block card shadow">
+        <div class="card-body p-4">
+          <div class="lc-block mb-3">
+            <img src="images/CLF.png" alt="AWS Certified Cloud Practitioner Badge" class="badge-image">
+          </div><!-- /lc-block -->
+          <div class="lc-block mb-4">
+            <div>
+              <h5 class="f-19 mb-2"><a href="https://www.credly.com/badges/52093854-223c-4853-b70c-9c15836ba0a5" class="text-dark">AWS Certified Cloud Practitioner </a></h5>
+              <br>
+            </div>
+          </div><!-- /lc-block -->
+        </div>
+      </div>
+    </div><!-- /col -->
+    <div class="col-sm-9 col-md-6 mb-4 col-lg-4">
+      <div class="lc-block card shadow">
+        <div class="card-body p-4">
+          <div class="lc-block mb-3">
+            <img src="images/ncl.png" style="height: 96px; width: 96px;" alt="National Cyber League Summer 2022 2nd Place Badge" class="badge-image">
+          </div><!-- /lc-block -->
+          <div class="lc-block mb-4">
+            <div>
+              <h5 class="f-19 mb-2">National Cyber League Summer 2022</h5>
+              <br>
+            </div>
+          </div><!-- /lc-block -->
+        </div>
+      </div>
+    </div><!-- /col -->
+  </div>
+  
+</section>
+<footer>
+  <p style="text-align: center; ">&copy; 2023 Kausic. All rights reserved.</p>
+  <p style="text-align: center; " class="website-count">Unable to fetch views</p>  
+</footer>
+    </body>
+</html>

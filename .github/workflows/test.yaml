@@ -1,0 +1,36 @@
+name: Frontend Testing
+
+on: push
+permissions:
+  id-token: write
+  contents: read
+jobs:
+  s3 deployment:
+    runs-on: ubuntu-latest
+    steps:
+     -uses: actions/checkout@v3
+     -name: Configure AWS credentials
+      uses: aws-actions/configure-aws-credentials@v2
+      with:
+        role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
+        role-session-name: samplerolesession1
+        aws-region: us-east-1
+     - name: Terraform setup
+       uses: hashicorp/setup-terraform@v2
+     - name: Terraform Init
+       run: terraform init
+     - name: Terraform Plan
+       run: terraform plan -input=false
+     - name: Terraform Apply
+       run: terraform apply -auto-approv
+     - name: Get cloud-front distribution id
+       id: get-id
+       run: |
+         distribution_id=$(aws cloudfront list-distributions --query "DistributionList.Items[0].Id" --output text)
+         echo "::set-output name=distribution_id::$distribution_id"
+     - name: cloud front cache invalidation
+       run: |
+          aws cloudfront create-invalidation --distribution-id ${{ steps.get-id.outputs.distribution_id }} --paths "/*" 
+
+      
+  
