@@ -1,7 +1,9 @@
+resource "aws_s3_bucket" "s3backend" {
+  bucket = "tf-state-frontend-kausic"
+}
 resource "aws_s3_bucket" "s3" {
   bucket = "cloud-resume-challenge-kausic"
 }
-
 # resource "aws_s3_object" "obj" {
 #   bucket = "cloud-resume-challenge-kausic-new"
 #   key="index.html"
@@ -22,12 +24,12 @@ locals {
 
 
 resource "aws_s3_object" "obj" {
-  for_each = fileset("/Users/kausic/Desktop/CloudResumeChallenge/Frontend","**")
+  for_each = fileset("static/","**")
   bucket = aws_s3_bucket.s3.bucket
   key=each.value
-  content_type = lookup(local.content_type_map, split(".", "/Users/kausic/Desktop/CloudResumeChallenge/Frontend${each.value}")[1], "text/html")
-  source ="/Users/kausic/Desktop/CloudResumeChallenge/Frontend/${each.value}"
-  etag = filemd5("/Users/kausic/Desktop/CloudResumeChallenge/Frontend/${each.value}")
+  content_type = lookup(local.content_type_map, split(".", "static/${each.value}")[1], "text/html")
+  source ="static/${each.value}"
+  etag = filemd5("static/${each.value}")
 }
 
 # resource "aws_s3_object" "delobj" {
