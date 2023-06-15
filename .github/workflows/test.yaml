@@ -4,7 +4,7 @@ permissions:
   id-token: write
   contents: read
 jobs:
-  s3 deployment:
+  s3_deployment:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -24,12 +24,12 @@ jobs:
         run: terraform apply -auto-approve
       - name: Get cloud-front distribution id
         id: get-id
-        run: >
+        run: |
           distribution_id=$(aws cloudfront list-distributions --query
           "DistributionList.Items[0].Id" --output text)
 
           echo "::set-output name=distribution_id::$distribution_id"
       - name: cloud front cache invalidation
-        run: >
+        run: |
           aws cloudfront create-invalidation --distribution-id ${{
           steps.get-id.outputs.distribution_id }} --paths "/*" 
