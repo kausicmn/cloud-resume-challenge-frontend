@@ -1,6 +1,3 @@
-resource "aws_s3_bucket" "s3backend" {
-  bucket = "tf-state-frontend-kausic"
-}
 resource "aws_s3_bucket" "s3" {
   bucket = "cloud-resume-challenge-kausic"
 }
