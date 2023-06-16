@@ -150,8 +150,8 @@ body{margin-top:20px;}
 }
 .column-divider {
   border-right: 1px solid #ccc;
-  padding-right: 15px;
-  margin-right: 15px;
+  padding-right: 10px;
+  margin-right: 10px;
 }
 .column-divider:last-child {
   border-right: none;
@@ -161,5 +161,13 @@ body{margin-top:20px;}
 
 .text-dark{
   text-decoration: none;
+}
+@media (max-width: 576px) {
+  .column-divider {
+    border-right: none;
+    padding-right: 0;
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
 }
 
